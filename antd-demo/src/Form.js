@@ -2,7 +2,7 @@ import { Form, Input, Button, Checkbox } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 
 const NormalLoginForm = () => {
-    const onFinish = (values: any) => {
+    const onFinish = (values) => {
       console.log('Received values of form: ', values);
     };
   
@@ -43,7 +43,7 @@ const NormalLoginForm = () => {
           <Button  style={{marginRight: 20}}type="primary" htmlType="submit" className="login-form-button">
             Log in
           </Button>
-          Or <a href="">register now!</a>
+          Or <a href="#">Register now!</a>
         </Form.Item>
       </Form>
     );

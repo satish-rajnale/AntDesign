@@ -1,4 +1,8 @@
 import { Menu, Button, Typography } from 'antd';
+import MenuBar from "./components/MenuBar";
+import { List, Card } from 'antd';
+import TabLine from './components/tabs';
+import MyTimeLine from './components/timeline'
 import {
   AppstoreOutlined,
   MenuUnfoldOutlined,
@@ -17,7 +21,20 @@ import { Row, Col } from 'antd';
 import { Divider } from 'antd';
 import NormalLoginForm from './Form';
 const { Header, Content, Footer } = Layout;
-
+const data = [
+  {
+    title: 'Title 1',
+  },
+  {
+    title: 'Title 2',
+  },
+  {
+    title: 'Title 3',
+  },
+  {
+    title: 'Title 4',
+  },
+];
 
 const { SubMenu } = Menu;
 
@@ -41,28 +58,8 @@ render(){
     <body>
     <Content className="mainBody">
      <Header>
+     <MenuBar/>
      
-      <Menu className ="navBar" theme="dark" mode="horizontal" >
-      
-        <Menu.Item className="navLink" key="5">Home</Menu.Item>
-        <Menu.Item className="navLink" key="4">Cart</Menu.Item>
-        <Menu.Item className="navLink" key="3">Products</Menu.Item>
-        <Menu.Item className="navLink" key="2">Blogs</Menu.Item>
-        <SubMenu  key="SubMenu" title="Anime">
-          <Menu.ItemGroup title="Item 1">
-            <Menu.Item key="setting:1">Option 1</Menu.Item>
-            <Menu.Item key="setting:2">Option 2</Menu.Item>
-          </Menu.ItemGroup>
-          <Menu.ItemGroup title="Item 2">
-            <Menu.Item key="setting:3">Option 3</Menu.Item>
-            <Menu.Item key="setting:4">Option 4</Menu.Item>
-          </Menu.ItemGroup>
-        </SubMenu>
-        <Menu.Item className="navLink" key="1">Products</Menu.Item>
-        
-       
-      </Menu>
-      
     </Header>
    
     <div className="posts">
@@ -74,9 +71,8 @@ render(){
             marginright: 20,
             width:200,
             color:'white',
-            minHeight: 500,
-            
-            
+            fontWeight:600,
+            minHeight: 500,    
           }}
         > <Col style={{color:'white',textAlign:'center',fontSize:18,fontWeight:300}} >RECENT POST...</Col>
         
@@ -145,9 +141,23 @@ render(){
 
     </div>
      <div className="formBody"><div className="formTop"><div className="form"><NormalLoginForm/></div></div> </div>
-    <div className="cardBody"></div>
-
-     </Content></body>
+     <List
+     size= "small"
+    grid={{ gutter: 4, column: 4 }}
+    dataSource={data}
+    renderItem={item => (
+      <List.Item>
+        <Card title={item.title}>Card content</Card>
+      </List.Item>
+    )}
+  />
+    <div className="cardBody">
+      <TabLine/>
+    </div>
+    <MyTimeLine/>
+     </Content>
+    
+     </body>
   );
 }
 }
