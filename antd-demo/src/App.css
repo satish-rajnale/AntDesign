@@ -1,0 +1,135 @@
+@import '~antd/dist/antd.css';
+
+.App {
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+
+body {
+  background: #636c75;
+}
+.mainBody {
+  background: linear-gradient(to left,#1d2630,#636c75);
+  margin:auto;
+  width:80%;
+  box-shadow:  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.menu{
+  display: none;
+}
+.ant-layout-header {
+ 
+  width:100%;
+  margin: auto;
+  padding: 0;}
+.navBar{
+  float: right;
+}
+
+.ant-menu-submenu-title{
+  font-weight: 500;
+  font-size: medium;
+  
+ 
+ }
+.ant-menu-item {
+  
+  font-weight: 500;
+  font-size: medium;
+}
+.posts{
+  display:flex;
+  margin-top: 20px;
+  align-items: center;
+
+  
+}
+.site-layout-background1{
+  background:rgba(243, 239, 239,0.5);
+  margin-left: 20px;
+ 
+  margin-right: 10px;
+  box-shadow:          0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.site-layout-background2 {
+  float:right;
+  margin-left: 20px;
+ margin:auto;
+  margin-right: 20px;
+  background:rgba(243, 239, 239,0.5);
+  
+  box-shadow:          0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.formBody{
+  background:rgba(243, 239, 239,0.5);
+  width:95%;
+  height: 62vh;
+  margin: auto;
+  margin-bottom: 30px;
+  align-content: center;
+  display: flex;
+  box-shadow:          0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.formTop{
+  margin:auto;
+  margin-top: 80px;
+  border: 1px solid rgb(223, 214, 214);
+  background: white;
+  border-radius: 5px;
+  width:30vw;
+  height:40vh;
+  align-content: center;
+  display: flex;
+  box-shadow:  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.form{
+  width:20vw;
+  height:30vh;
+ margin: 50px auto;
+ 
+}
+.cardBody{
+  background:rgba(243, 239, 239,0.5);
+  width:95%;
+  height: 62vh;
+  margin-top: 30px;
+  padding-top: 30px;
+  margin: auto;
+  align-content: center;
+  display: flex;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+
+@media only screen and (max-width: 400px) {
+ .menu{
+   display: block;
+ }
+}
